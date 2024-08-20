@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 
 *{
-    background-color: black;
+    background-color: aliceblue;
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -67,8 +67,30 @@ a:hover,a.active{
     color: chartreuse;
 }
 
-h1,h3{
+h3,p{
     color: aliceblue;
+}
+.home .home-content h1{
+    font-size: 6rem;
+    color: aliceblue;
+    font-weight: 700;
+    line-height: 1.3;
+}
+span{
+    color: chartreuse;
+}
+.home-content h3{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+.home-img{
+    border-radius: 50%;
+}
+.home-img img{
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+
 }
 @media(max-width:995px){
     nav{
@@ -88,6 +110,47 @@ h1,h3{
         display: block;
     }
     nav a{
-        
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
     }
+    nav a:hover,
+    nav a.active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid chartreuse;
+    }
+}
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.social-icons a{
+    color: aqua;
+    width: 100%;
+    height: 9rem;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+
+}
+.typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+
+}
+.typing-text span{
+    position: relative;
+}
+.typing-text span::before{
+    content: "software developer";
+    color: #b74b4b;
+    animation: words 20s infinite;
 }
