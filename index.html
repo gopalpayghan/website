@@ -9,32 +9,55 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
   <body>
-    <header>
-        <a href="#" class="logo">Gopal</a>
-      <nav>
-          <a href="#" class="active">Home</a>
-          <a href="#">Education</a>
-          <a href="#">skills</a>
-          <a href="#">About us</a>
-          <a href="#">Contact Me</a>
+    <header class="header">
+        <a href="#home" class="logo">AI <span>Nexus</span></a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+        <nav class="navbar">
+          <a href="#home">Home</a>
+          <a href="#chatbot">Chatbot</a>
+          <a href="#videos">Videos</a>
+          <a href="#about">About us</a>
+          <a href="#contact">Contact</a>
       </nav>
+      <a class="gradient-btn" type="button">Log in</a>
     </header>
-    <section class="home">
-        <div class="home-img">
-            <img src="profile-pic (7).png" alt="img">
-        </div>
+    <section class="home" id="home">
         <div class="home-content">
-            <h1>Hi, It's <span>Gopal</span></h1>
-            <h3 class="typing-text">I'm a <span></span></h3>
+            <h1>Hi, It's <span>AI Nexus</span></h1>
+            <h3>I'm a <span>Deepfake Face Detector</span></h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sunt saepe fuga. Amet dignissimos reprehenderit voluptas voluptatibus magnam, quasi eos omnis enim porro ullam blanditiis nulla eaque unde modi molestiae!</p>
+            <div class="btn-group">
+              <a href="#" class="btn">Test Video</a>
+              <a href="#" class="btn">Test Image</a>
+            </div>
             <div class="social-icons">
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="fa-brands fa-github"></i></a>
             </div>
+            
+        </div>
+        <div class="home-video">
+          <video src="hero-home.webm" autoplay loop muted></video>
         </div>
     </section>
+    <section class="main" id="chatbot">
+      <div class="image-container">
+          <div class="image">
+          </div>
+          <h1>AI <span>NEXUS</span></h1>
+          <p>I'm a Virtual Assistant Nexus, How may i help you?</p>
+      </div>
+      <div class="input">
+          <button class="talk"><i class="fas fa-microphone-alt"></i></button>
+          <h1 class="content">Click here to speak</h1>
+      </div>
+  </section>
+  <section class="video-content" id="videos">
+    <video src="invideo-ai-1080 Deep Fake Face Videos_ The Future and De 2024-08-22.mp4" controls></video>
+  </section>
     <script src="app.js"></script>
   </body>
 </html>
+
